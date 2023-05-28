@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="start-box">
+      <select id="select" class="select">
+        <option value="1">1 Dəqiqə</option>
+        <option value="2">2 Dəqiqə</option>
+        <option value="3">3 Dəqiqə</option>
+        <option value="4">4 Dəqiqə</option>
+        <option value="5">5 Dəqiqə</option>
+      </select>
+      <button type="select" class="start">Başla!</button>
+    </div>
+
+    <div class="done" style="display: none">
+      <div>OYUN BİTDİ !</div>
+      <div class="total-result">Nəticə: </div>
+      <div>Seçdiyin zaman:</div>
+      <button type="select" class="restart">Təkrar oyna..</button>
+    </div>
+
+    <div class="correct" style="display: none">DOĞRUDUR!</div>
+    <div class="incorrect" style="display: none">YANLIŞDIR!</div>
+
+    <div class="rgb-box">
+      <div class="rgb-random"></div>
+      <div class="result">Doğru</div>
+      <div class="palet">
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+        <div class="colors"></div>
+      </div>
+      <div class="timer">00:00</div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
