@@ -42,7 +42,7 @@ start.addEventListener("click", () => {
         });
         divColor[randomIndex].style.background = rgbRandomText.textContent;
 
-        correct.style.display = "block";
+        correct.style.display = "flex";
         incorrect.style.display = "none";
         correctCount++;
         result.textContent = `Doğru: ${correctCount}`;
@@ -58,7 +58,7 @@ start.addEventListener("click", () => {
         }, 1000);
       } else {
         correct.style.display = "none";
-        incorrect.style.display = "block";
+        incorrect.style.display = "flex";
         correctCount = 0;
         result.textContent = `Doğru: ${correctCount}`;
         setTimeout(() => {
@@ -102,7 +102,7 @@ function startTimer(duration) {
     }
     if (timer.innerHTML == "00:00") {
       clearInterval(timerInterval);
-      done.style.display = "block";
+      done.style.display = "flex";
     }
 
     let totalResult = document.querySelector(".total-result");
@@ -112,7 +112,7 @@ function startTimer(duration) {
 
     restart.addEventListener("click", () => {
       done.style.display = "none";
-      startBox.style.display = "block";
+      startBox.style.display = "flex";
     });
-  }, 100);
+  }, 100  );
 }

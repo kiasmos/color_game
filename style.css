@@ -93,8 +93,8 @@ body {
 }
 
 .done {
-  width: 400px;
-  height: 350px;
+  width: 450px;
+  height: 400px;
   background-color: rgb(2, 25, 37);
   border-radius: 20px;
   display: flex;
